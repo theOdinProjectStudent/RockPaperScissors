@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family:  Roboto, 'Helvetica Neue', sans-serif;
+    font-family:  Cambria, Cochin, serif;
     background-color: grey;
     color:#f9faf8;
     min-height: 100vh;
@@ -14,6 +14,7 @@ body{
 }
 
 header, footer, #result{ 
+    color: goldenrod;
     background-color: rgb(29, 16, 99);
 }
 
@@ -59,9 +60,22 @@ header a img{
 .choices ul{
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    gap: 100px;
+    justify-content: center;
     align-items: center;
-    font-size: 90px;
+}
+
+.choices ul li button{
+    border: 3px solid rgb(29, 16, 99);
+    background-color: inherit;
+    border-radius: 5%;
+    padding: 5px;
+    font-size: 110px;
+}
+
+.choices ul li button:hover{
+    cursor: pointer;
+    border: 3px solid #f9faf8;
 }
 
 #result{
@@ -82,6 +96,7 @@ main{
 main h1{
     text-align: center;
     font-size: 35px;
+    color: rgb(19, 17, 17);
 }
 
 main h2{

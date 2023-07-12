@@ -116,13 +116,15 @@ buttons.forEach((button) => {
     
     // Game Over
     if(playerScore === 5 || computerScore === 5){
-      const showMsg = setTimeout(() => {
-        resultMessage = outro();
-        alert( outro()+ " Game restarting");
+      const popUp = setTimeout(() => {
+        resultMessage.textContent = outro();
       }, 2000);
+      const showMsg = setTimeout(() => {
+        alert( outro()+ " Game restarting");
+      }, 4000);
       const reload = setTimeout(() => {
         restartGame()
-      }, 2000);
+      }, 6000);
     }
   })
 })
